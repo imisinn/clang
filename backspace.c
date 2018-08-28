@@ -13,13 +13,17 @@ int sleep(unsigned long x){
 int main(void){
 
     int i;
+    char c = 'z';
+    int del = 6;
+    int time_s = 500;
 
     printf("ABCDEFG");
 
-    for(i = 0;i < 7; i++){
-        sleep(1000);
-        printf("\b \b");
+    for(i = 0;i < del; i++){
+        sleep(time_s);
+        printf("\b%c\b",c);
         fflush(stdout);
     }
+    //printf("\n");
     return 0;
 }
